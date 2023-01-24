@@ -19,3 +19,39 @@ let l = document.querySelector(".l");
 let equal = document.querySelector(".equal");
 
 let output = document.querySelector(".output");
+
+
+a.onclick = function (){
+    output.innerHTML = 1;
+};
+b.onclick = function (){
+    output.innerHTML = 2;
+};
+c.onclick = function (){
+    output.innerHTML = 3;
+};
+d.onclick = function (){
+    output.innerHTML = 4;
+};
+e.onclick = function (){
+    output.innerHTML = 5;
+};
+f.onclick = function (){
+    output.innerHTML = 6;
+};
+g.onclick = function (){
+    output.innerHTML = 7;
+};
+h.onclick = function (){
+    output.innerHTML = 8;
+};
+i.onclick = function (){
+    output.innerHTML = 9;
+};
+j.onclick = function (){
+    output.innerHTML = 0;
+};
+k.onclick = function (){
+    output.innerHTML = "." ;
+};
+
