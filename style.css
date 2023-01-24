@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* line-height: 90%; */
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(300deg,#ff7979,#feff79,#86ff79,#79fff8,#798fff,#db79ff,#ff79ab);
+    background-size: 420% 420%;
+    animation: gradient-animation 70s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.cal{
+    width: 350px;
+    height: 400px;
+    border: 2px solid rgba(61, 60, 60, 0.699);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+}
+.output{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid#ddd;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.836) ;
+    font-weight: 500;
+}
+.control{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.control .i1{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.control .i2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.control .i1 .left{
+    width: 80%;
+    height: 100%;
+}
+.control .i1 .right{
+    width: 20%;
+    height: 100%;
+}
+.control .i1 .left .btn{
+    width: 33.33%;
+    height: 25%;
+    background: #798fff;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd ;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-out;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+.control .i1 .left .btn:hover{
+    font-size: 35px;
+}
+.control .i1 .left .btn:active{
+    background: #ff7979;
+    color: rgba(221, 221, 221, 0.664);
+}
+.control .i1 .left .number{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.equal{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 60px;
+    line-height: 55px;
+    background-color: #ff7979;
+    z-index: 10;
+    color: #ddd;
+    cursor: pointer;
+    transition: .2s ease-out;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    transition: .1s ease-out;
+}
+.equal:active{
+    background: #798fff;
+}
+.control .i1 .right .cont{
+    width: 100%;
+    height: 25%;
+    background: #feff79;
+    color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-out;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom: 2px solid #ddd;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    transition: .1s ease-out;
+    
+}
+.control .i1 .right .cont:nth-child(1){
+    border-top: 2px solid #ddd;
+}
+.control .i1 .right .cont:nth-child(3){
+    padding-top: 10px;
+}
+.control .i1 .right .cont:last-child{
+    border-bottom: none;
+}
+.control .i1 .right .cont:hover{
+    font-size: 50px;
+}
+.control .i1 .right .cont:active{
+    background-color: #db79ff;
+}
+
+
